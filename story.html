@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="navbar.css">
+        <link rel="stylesheet" href="myPage.css">
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Story</title>
+        
+        <style>
+            body {
+                background-image: url(path_tree.png);
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-position: center;
+                background-size: cover;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <ul id="navbar">
+            <li><a href ="javascript:history.back()"><em style='font-size:18px' class='fas'>&#xf3e5;</em></a></li>
+            <li><a href="mainPage.html"><em style='font-size:18px' class='fas'>&#xf015;</em></a></li>
+            <li style='font-size:18px'><a href="story.html">Story</a></li>
+            <li style='font-size:18px'><a href="experience.html">Experience</a></li>
+            <li style='font-size:18px' class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Social Media</a>
+                <div class="dropdown-content">
+                    <a href="https://www.facebook.com/hylkki">Facebook</a>
+                    <a href="https://fi.linkedin.com/in/virtanenriku?trk=profile-badge">LinkedIn</a>
+                    <a href="https://github.com/RikuVirtanen">GitHub</a>
+                </div>
+            </li>
+            <li style="float:right; font-size: 18px"><a href="about.html">Hobbies</a></li>
+        </ul>
+        <script>
+            window.onscroll = function() {myFunction()};
+            
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+            var stickyNavigation;
+            
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
+            
+            window.addEventListener('scroll', stickyNavigation);
+            
+            </script>
+        <div class="transboxcenter">
+            <br>
+            <h1>My story</h1>
+            <br>
+            <br>
+            <p>I was born in 1991 in a small village named Nummi-Pusula in South Finland but me and my family moved to Helsinki after a year. So you could say that I have lived almost my whole life in Helsinki or atleast in the Helsinki metropolitan area. My father was in the military and I got myself a military upbringing. We also lived five years in Santahamina which is a military settlement in Helsinki. I learned at early age to be proactive and the mentality to be always doing something to progress myself.</p>
+            <hr>
+            <p>I graduated from Vuosaari Highschool in 2010 and after that I served my  military service in Santahamina's military settlement. I got to the RUK officer school in Hamina and there I live for the 94 days. After I got released from my service I chose to stay and work in the military for a another year as platoons younger instructor.</p>
+            <hr>
+            <p>In 2012 I changed my workplace and got a place in Itäkeskus K-Citymarket  department store. I worked there almost four years before I decided to go back to study. In K-Citymarket I got the opportunity to work as cashier, salesperson and in the logistics of the department store. </p>
+            <hr>
+            <p>After my time in K-Citymarket I had little trouble deciding my field of study but I landed on Hospitality industry. I graduated as Restonomi from Haaga-Helia in 2018. After that I worked in restaurant White Lady and in that time I got to the position of shift manager.After these years I decided to go back to school and stumbled in the field of Information technology business. I got accepted again in Haaga-Helia 2020.</p>
+        </div>
+    </body>
+</html>

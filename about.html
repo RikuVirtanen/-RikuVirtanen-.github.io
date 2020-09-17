@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="navbar.css">
+        <link rel="stylesheet" href="myPage.css">
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hobbies</title>
+        <style>
+            body {
+                background-image: url(pier_wooden_lake.png);
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-position: center;
+                background-size: cover;
+                text-align: center;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <ul id="navbar">
+            <li><a href ="javascript:history.back()"><em style='font-size:18px' class='fas'>&#xf3e5;</em></a></li>
+            <li><a href="mainPage.html"><em style='font-size:18px' class='fas'>&#xf015;</em></a></li>
+            <li style='font-size:18px'><a href="story.html">Story</a></li>
+            <li style='font-size:18px'><a href="experience.html">Experience</a></li>
+            <li style='font-size:18px' class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Social Media</a>
+                <div class="dropdown-content">
+                    <a href="https://www.facebook.com/hylkki">Facebook</a>
+                    <a href="https://fi.linkedin.com/in/virtanenriku?trk=profile-badge">LinkedIn</a>
+                    <a href="https://github.com/RikuVirtanen">GitHub</a>
+                </div>
+            </li>
+            <li style="float:right; font-size: 18px"><a href="about.html">Hobbies</a></li>
+        </ul>
+        <script>
+            window.onscroll = function() {myFunction()};
+            
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+            var stickyNavigation;
+            
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
+            
+            window.addEventListener('scroll', stickyNavigation);
+            
+            </script>
+        <div class="transboxcenter">
+            <br>
+            <h3>Football</h3>
+            <p>I have played football from when I was 12 years old. Back then I used to practice three to four times a week and it was kind of intensive. Nowadays football has become more of a hobby and a more of a way to relax and steam off stress.</p>
+            <hr>
+            <h3>Discgolf</h3>
+            <p>I started playing discgolf one year ago in the summer of 2019. Since then I have practiced a lot and became better and better in it. I like this sport because it's all in you and nobody else. You are the lone benefactor in your results.
+            <hr>
+            <h3>Guitar/music</h3>
+            <p>I have been interested in music for all my life. At young age I started to sing with the music I listened to and later on I learned myself to play guitar. Now I have been playing guitar for seven years. When I started to play I practiced everyday but nowadays I play maybe one or two times a week. Music is still big part of my life and I couldn't think my life without it.</p>
+        </div>
+    </body>
+</html>

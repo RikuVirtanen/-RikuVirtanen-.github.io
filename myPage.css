@@ -1,0 +1,85 @@
+h1 {
+    text-align: center;
+    font-family:Garamond, cursive;
+    color:saddlebrown;
+}
+h2 {
+    text-align: center;
+    font-family:Garamond, cursive;
+    color:saddlebrown;
+}
+h4 {
+    text-align: center;
+    font-family:Garamond, cursive;
+    color:saddlebrown
+}
+
+h3 {
+    text-align: center;
+    font-family: Garamond, cursive;
+    color: saddlebrown;
+}
+
+p {
+    text-align: center;
+    font-family:Garamond, cursive;
+    color:black;
+}
+/*center transbox*/
+.transboxcenter {
+    margin: auto;
+    background-color: #ffffff;
+    border: 1px solid white;
+    opacity: 0.6;
+    z-index: 2;
+    width: 50%; 
+}
+
+.transboxcenter hr {
+    width: 50%;
+    z-index: 3;
+}
+
+.transboxcenter p {
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+    font-size: 20px;
+    z-index: 3;
+}
+
+.transbox center h4 {
+    width: 50%;
+}
+/*rightside transbox*/
+.transboxleft {
+    margin: 15px;
+    background-color: aliceblue;
+    border: 1px solid white;
+    opacity: 0.6;
+    width: 50%;
+    z-index: 2;
+}
+
+.transboxleft p {
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+    font-size: 20px;
+    z-index: 3;
+}
+
+.transboxleft hr {
+    width: 50%;
+    z-index: 3;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 60px;
+  }

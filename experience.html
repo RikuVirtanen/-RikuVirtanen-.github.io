@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="myPage.css">
+        <link rel="stylesheet" href="navbar.css">
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Experience</title>
+        <style>
+            body {
+                background-image: url(vintage_boards.png);
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-position: center;
+                background-size: cover;
+                text-align: center;
+            }     
+        </style>
+    </head>
+    <body>
+        <ul id="navbar">
+            <li><a href ="javascript:history.back()"><em style='font-size:18px' class='fas'>&#xf3e5;</em></a></li>
+            <li><a href="mainPage.html"><em style='font-size:18px' class='fas'>&#xf015;</em></a></li>
+            <li style='font-size:18px'><a href="story.html">Story</a></li>
+            <li style='font-size:18px'><a href="experience.html">Experience</a></li>
+            <li style='font-size:18px' class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Social Media</a>
+                <div class="dropdown-content">
+                    <a href="https://www.facebook.com/hylkki">Facebook</a>
+                    <a href="https://fi.linkedin.com/in/virtanenriku?trk=profile-badge">LinkedIn</a>
+                    <a href="https://github.com/RikuVirtanen">GitHub</a>
+                </div>
+            </li>
+            <li style="float:right; font-size: 18px"><a href="about.html">Hobbies</a></li>
+        </ul>
+        <script>
+            window.onscroll = function() {myFunction()};
+            
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+            var stickyNavigation;
+            
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
+            
+            window.addEventListener('scroll', stickyNavigation);
+            
+            </script>
+        <div class="transboxleft">
+            <h1>Work Experience</h1>
+            <hr>
+            <p>Shift Manager
+            <br>Restaurant White Lady
+            <br>2018-</p>
+            <hr>
+            <p>Waiter
+            <br>Restaurant White Lady
+            <br>2013-2015</p>
+            <hr>
+            <p>Salesperson/Cashier
+            <br>K-Citymarket Oy
+            <br>2012-2015</p>
+            <hr>
+            <p>Service desk intern
+            <br>Holiday Inn Helsinki
+            <br>2014</p>
+            <hr>
+            <p>Taxi driver
+            <br>Stadin taksinkuljettajat Oy
+            <br>2013-2014</p>
+            <hr>
+            <p>Platoons Younger Instructor
+            <br>Puolustusvoimat
+            <br>2012</p>
+        </div>
+    </body>
+</html>

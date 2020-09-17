@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="navbar.css">
+        <link rel="stylesheet" href="myPage.css">
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <style>
+            body {
+                background-image: url(lone_goal.png);
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-position: center;
+                background-size: cover;
+                text-align: center;
+            } 
+        </style>
+    </head>
+    <body>
+        <ul id="navbar">
+            <li><a href ="javascript:history.back()"><em style='font-size:18px' class='fas'>&#xf3e5;</em></a></li>
+            <li><a href="mainPage.html"><em style='font-size:18px' class='fas'>&#xf015;</em></a></li>
+            <li style='font-size:18px'><a href="story.html">Story</a></li>
+            <li style='font-size:18px'><a href="experience.html">Experience</a></li>
+            <li style='font-size:18px' class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Social Media</a>
+                <div class="dropdown-content">
+                    <a href="https://www.facebook.com/hylkki">Facebook</a>
+                    <a href="https://fi.linkedin.com/in/virtanenriku?trk=profile-badge">LinkedIn</a>
+                    <a href="https://github.com/RikuVirtanen">GitHub</a>
+                </div>
+            </li>
+            <li style="float:right; font-size: 18px"><a href="about.html">Hobbies</a></li>
+        </ul>
+        <script>
+            window.onscroll = function() {myFunction()};
+            
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+            var stickyNavigation;
+            
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
+            
+            window.addEventListener('scroll', stickyNavigation);
+            
+            </script>
+        <br>
+        <br>
+        <h1>Riku Virtanen</h1>
+        <div class="transboxcenter">
+            <p style="font-family:monospace">"Some say our dreams are a distant road,<br> that which our hearts would like to go"<br>-Radical Face</p>
+            <br>
+            <hr>
+            <br>
+            <p>Haaga-Helia University of Applied Science
+            <br>Bachelor of Business Information Technology
+            <br>Degree Programme in Software Engineering
+            <br>Helsinki, Finland started 18 August 2020 still active</p>
+            <br>
+            <hr>
+            <br>
+            <p>University of Helsinki
+            <br>Elements of AI -course
+            <br>Basics of programming, Java still active
+            <br>Helsinki, Finland 6 August 2020</p>
+            <br>
+            <hr>
+            <br>
+            <p>Metropolia Open University of Applied Science
+            <br>TXK Information Technology open courses
+            <br>Helsinki, Finland started 27 April 2020 still active</p>
+            <br>
+            <hr>
+            <br>
+            <p> Haaga-Helia University of Applied Science
+            <br>Bachelor of hospitality Management
+            <br>Degree Programme in Hotel and Restaurant Management
+            <br>Helsinki, Finland 9 March 2018
+            </p>
+            
+        </div>
+    </body>
+</html>
